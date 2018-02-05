@@ -1,0 +1,22 @@
+{
+    "models": [
+        {
+            "id": 1,
+            "type": "zebra",
+            "title": "Beyaz Zebra",
+            "image": "zebra-beyaz.jpg"
+        },
+        {
+            "id": 2,
+            "type": "zebra",
+            "title": "Kahverengi Zebra",
+            "image": "zebra-kahve.jpg"
+        },
+        {
+            "id": 3,
+            "type": "zebra",
+            "title": "Bambu Zebra",
+            "image": "zebra-bambu.jpg"
+        }
+    ]
+}
