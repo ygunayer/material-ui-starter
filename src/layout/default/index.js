@@ -6,12 +6,12 @@ import Footer from './Footer';
 
 import s from './style.styl';
 
-const FullPageLayout = ({ children }) => (
-    <div>
+const DefaultLayout = ({ children }) => (
+    <React.Fragment>
         <Header />
-        <Body className={s['full-layout']}>{children}</Body>
+        <Body className={s['layout']}>{children}</Body>
         <Footer />
-    </div>
+    </React.Fragment>
 );
 
-export default FullPageLayout;
+export default DefaultLayout;

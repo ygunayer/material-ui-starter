@@ -8,6 +8,7 @@ A React starter kit that doesn't pretend it's it's the only starter kit you'll e
 - React
 - React Router
 - Material UI
+- Ability to present different pages with different layouts (compare the login page with others)
 - A little bit of production readyness
 
 ## Install Dependencies

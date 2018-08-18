@@ -1,9 +1,7 @@
-import Header from './Header';
-import Body from './Body';
-import FullPageLayout from './FullPageLayout';
+import DefaultLayout from './default';
+import FullPageLayout from './full';
 
 export {
-    Header,
-    Body,
+    DefaultLayout,
     FullPageLayout
-}
+};

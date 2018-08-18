@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import { Reboot } from 'material-ui';
-import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core';
 
-import { FullPageLayout } from './layout';
+import { DefaultLayout, FullPageLayout } from './layout';
 import { NotFound } from './pages/generic';
 
-import { About, Home } from './pages';
+import { About, Home, Login } from './pages';
 
 import moment from 'moment';
 
@@ -16,7 +15,7 @@ moment.locale('tr');
 
 const theme = createMuiTheme();
 
-const AppRoute = ({ component: Component, layout: Layout = FullPageLayout, ...rest }) => (
+const AppRoute = ({ component: Component, layout: Layout = DefaultLayout, ...rest }) => (
     <Route {...rest} render={props => (
         <Layout>
             <Component {...props} />
@@ -30,6 +29,8 @@ ReactDOM.render((
             <Switch>
                 <AppRoute exact path="/" component={Home} />
                 <AppRoute path="/about" component={About} />
+                <AppRoute path="/login" component={Login} layout={FullPageLayout} />
+                <AppRoute component={NotFound} />
             </Switch>
         </Router>
     </MuiThemeProvider>

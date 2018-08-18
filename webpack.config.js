@@ -68,6 +68,7 @@ const config = {
         ]
     },
     //devtool: isDev ? 'sourcemap' : false,
+    mode: isDev ? 'development' : 'production',
     devtool: 'sourcemap',
     plugins: isDev ? [
         new webpack.DefinePlugin({
